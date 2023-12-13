@@ -17,7 +17,7 @@ class Ball:
 
 def make_ball(x,y):
     ball = Ball(x,y)
-    ball.size = 20
+    ball.size = random.randint(15,30)
     ball.x = x
     ball.y = y
     ball.change_x = random.randint(-9,9)
@@ -40,8 +40,8 @@ def make_rectangle(x,y):
     rectangle = Rectangle(x,y)
     rectangle.x = x
     rectangle.y = y
-    rectangle.width = 20
-    rectangle.height = 40
+    rectangle.width = random.randint(15,30)
+    rectangle.height = random.randint(30,60)
     rectangle.angle = 90
     rectangle.change_x = random.randint(-9,9)
     rectangle.change_y = random.randint(-9,9)
